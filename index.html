@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Certificate Verification</h1>
+
+        <p>Verify your certificate easily</p>
+
+        <input
+            type="text"
+            id="certificateId"
+            placeholder="Enter Certificate ID"
+        >
+
+        <input
+            type="text"
+            id="certificateHash"
+            placeholder="Enter Certificate Hash"
+        >
+
+        <button onclick="verifyCertificate()">
+            Verify Certificate
+        </button>
+
+<div id="result"></div>
+
+<hr>
+
+<h2>Add Certificate</h2>
+
+<input
+    type="text"
+    id="addCertificateId"
+    placeholder="Enter Certificate ID"
+>
+
+<input
+    type="text"
+    id="studentName"
+    placeholder="Enter Student Name"
+>
+
+<input
+    type="text"
+    id="course"
+    placeholder="Enter Course"
+>
+
+<input
+    type="text"
+    id="certificateHash"
+    placeholder="Enter Certificate Hash"
+>
+
+<div id="addresult"></div>
+
+</div>
+
+     <script src="https://cdn.jsdelivr.net/npm/ethers@6.15.0/dist/ethers.umd.min.js"></script>
+<script src="script.js?v=2"></script>
+
+</body>
+</html>
