@@ -1,4 +1,4 @@
-const contractAddress ="0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9";
+const contractAddress ="0x61511a9BB0BAc15e840b26c62f1d40Bf967f6f30";
 
 const contractABI = [
     {
@@ -76,9 +76,9 @@ async function verifyCertificate() {
         );
 
         // Send request directly to Hardhat
-        const response = await fetch(
-            "http://127.0.0.1:8545",
+        const response = await fetch("https://ethereum-sepolia-rpc.publicnode.com", 
             {
+
                 method: "POST",
 
                 headers: {
